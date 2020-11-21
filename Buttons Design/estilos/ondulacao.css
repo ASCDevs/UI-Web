@@ -1,0 +1,38 @@
+.ondulado{
+    width: 200px;
+    height: 60px;
+
+    position: relative;
+
+    background-color: #0D84BF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+
+    transition-duration: 0.4s;
+    overflow: hidden;
+}
+.ondulado:after{
+    content: "";
+    background-color: #f1f1f1;
+    display: block;
+    position:absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+.ondulado:active:after{
+    padding: 0;
+    margin:0;
+    opacity:1;
+    transition: 0s;
+}
