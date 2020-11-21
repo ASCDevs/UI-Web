@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+.simples-1{
+    width: 200px;@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    height: 60PX;
+
+    display: flex;
+    border: 3px solid black;
+    justify-content: center;
+    align-items: center;
+    
+    /*Texto do botão*/
+    font-family: 'Lobster Two', sans-serif ;
+    font-size: 1.7em;
+    color: black;
+
+    /*Tirando o estilo padrão da tag <a>*/
+    text-decoration:none;
+}
+
+.simples-1:hover{
+    color:white;
+    background-color: black
+}

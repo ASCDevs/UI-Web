@@ -1,0 +1,28 @@
+.pressed{
+    width: 200px;
+    height: 60px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    color: white;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ED0DD9;
+
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.pressed:hover{
+    background-color: #BE03FD;
+}
+
+.pressed:active{
+    background-color: #BE03FD;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
