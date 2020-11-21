@@ -1,0 +1,40 @@
+.next{
+    width:200px;
+    height: 60px;
+    background-color: #FF9914;
+
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.4em;
+    color: white;
+    font-weight: bold;
+
+    transition: all 0.5s;
+
+}
+
+.next span{
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.next span:after{
+    content: '\00bb';
+    opacity:0;
+    top:0;
+    right: -20px;
+    transition: 0.5s;
+}
+.next:hover span{
+    padding-right: 25px;
+}
+.next:hover span:after{
+    padding-left: 10px;
+    opacity:1;
+    right: 0;
+}
