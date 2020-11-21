@@ -1,0 +1,19 @@
+.fade{
+    width: 200px;
+    height: 60px;
+
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.4em;
+    color: white;
+    
+    background-color: #66A182;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    opacity:0.6;
+    transition: 0.3s;
+}
+.fade:hover{
+    opacity: 1;
+}

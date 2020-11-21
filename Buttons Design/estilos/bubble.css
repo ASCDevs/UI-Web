@@ -1,0 +1,60 @@
+/*fonte*/
+.bg-bubble{
+    background-color: black;
+    
+}
+.bb-titulo{
+    color: white;
+}
+.bubble{
+    width: 200px;
+    height: 60px;
+
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.4em;
+    color: #ECC30B;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 0.3em solid #ECC30B;
+    border-radius: 0.5em;
+    z-index: 1;
+    transition: 0.5s;
+
+}
+.bubble span{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #ECC30B;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n)-1)*0.1s);
+    z-index:-1;
+}
+.bubble:hover{
+    color: black;
+}
+.bubble:hover span{
+    transform: translateY(0) scale(2);
+}
+.bubble span:nth-child(1){
+    --n:1;
+}
+.bubble span:nth-child(2){
+    --n:2;
+}
+.bubble span:nth-child(3){
+    --n:3;
+}
+.bubble span:nth-child(4){
+    --n:4;
+}
